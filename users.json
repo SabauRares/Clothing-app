@@ -1,45 +1,9 @@
 [ {
-  "username" : "Ale",
-  "password" : "1234",
+  "username" : "Rares",
+  "password" : "Rares",
   "role" : "Customer"
 }, {
-  "username" : "Adi",
-  "password" : "123",
-  "role" : "Library Staff"
-}, {
-  "username" : "Gigi",
-  "password" : "12345",
-  "role" : "Customer"
-}, {
-  "username" : "Gigi2",
-  "password" : "123",
-  "role" : "Library Staff"
-}, {
-  "username" : "Alee",
-  "password" : "1234",
-  "role" : "Customer"
-}, {
-  "username" : "Marti",
-  "password" : "1234",
-  "role" : "Library Staff"
-}, {
-  "username" : "LOL",
-  "password" : "1111",
-  "role" : "Customer"
-}, {
-  "username" : "Raresutu",
-  "password" : "1234",
-  "role" : "Library Staff"
-}, {
-  "username" : "test",
-  "password" : "test",
-  "role" : "Library Staff"
-}, {
-  "username" : "gigi",
-  "password" : "12",
-  "role" : "Customer"
-}, {
-  "username" : "gig",
-  "password" : "12",
-  "role" : "Library Staff"
+  "username" : "Rares2",
+  "password" : "Rares2",
+  "role" : "Producer"
 } ]

@@ -17,11 +17,11 @@ public class UsersList {
     private static ArrayList<Users> users = new ArrayList<>();
 
     public static void addUser(Users newUser) throws UsernameAlreadyExistsException {
-        chechkUserDoesNotAlreadyExist(newUser.getUsername());
+        checkUserDoesNotAlreadyExist(newUser.getUsername());
         users.add(newUser);
     }
 
-    private static void chechkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
+    private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
         for (Users user : users) {
             if (Objects.equals(username, user.getUsername()))
                 throw new UsernameAlreadyExistsException(username);

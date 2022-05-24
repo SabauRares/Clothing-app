@@ -78,7 +78,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.clothingappcom.example.clothingapp.Main
+                                com.example.clothingapp/com.example.clothingapp.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

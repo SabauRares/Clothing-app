@@ -20,7 +20,7 @@ public class Main extends Application {
         stg = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("initial.fxml"));
-        primaryStage.setTitle("Library System Management");
+        primaryStage.setTitle("Clothing Application");
         primaryStage.setScene(new Scene(root,900,650));
         primaryStage.show();
     }

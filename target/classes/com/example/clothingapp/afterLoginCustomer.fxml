@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #005327;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab text="Shop">
+            <content>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ListView layoutX="367.0" layoutY="48.0" prefHeight="529.0" prefWidth="490.0" />
+                        <Label alignment="CENTER" layoutX="31.0" layoutY="90.0" prefHeight="79.0" prefWidth="306.0" text="Shop with us!!" textFill="WHITE" underline="true">
+                            <font>
+                                <Font name="Arial" size="48.0" />
+                            </font>
+                        </Label>
+                  <ImageView fitHeight="174.0" fitWidth="224.0" layoutX="81.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/Kart.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+            </content></Tab>
+        <Tab text="Purchase">
+            <content>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Button alignment="CENTER" layoutX="342.0" layoutY="494.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Place order" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="24.0" />
+                            </font>
+                        </Button>
+                        <TextField layoutX="398.0" layoutY="209.0" prefHeight="53.0" prefWidth="363.0" promptText="Name">
+                            <font>
+                                <Font name="Arial" size="17.0" />
+                            </font>
+                        </TextField>
+                        <Label layoutX="36.0" layoutY="198.0" prefHeight="66.0" prefWidth="273.0" text="Enter your name" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="343.0" prefHeight="63.0" prefWidth="268.0" text="Choose product" textFill="WHITE">
+                            <font>
+                                <Font name="Arial" size="24.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox layoutX="398.0" layoutY="347.0" prefHeight="56.0" prefWidth="366.0" />
+                  <Label layoutX="183.0" layoutY="44.0" prefHeight="91.0" prefWidth="546.0" text="Place an order right now!" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+            </content></Tab>
+    </tabs>
+</TabPane>
