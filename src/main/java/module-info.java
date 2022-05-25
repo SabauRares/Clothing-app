@@ -10,4 +10,6 @@ module com.example.clothingapp {
     exports com.example.clothingapp.exceptions;
     exports com.example.clothingapp.servicies;
     exports com.example.clothingapp.user;
+    exports com.example.clothingapp.clothes;
+    exports com.example.clothingapp.orders;
 }

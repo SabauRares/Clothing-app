@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #005327;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #005327;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clothingapp.CustomerController">
     <tabs>
         <Tab text="Shop">
             <content>
@@ -23,9 +23,9 @@
                   </ImageView>
                   <TableView fx:id="tableOfClothes" layoutX="388.0" layoutY="140.0" prefHeight="396.0" prefWidth="475.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="Name" />
-                      <TableColumn prefWidth="75.0" text="Brand" />
-                        <TableColumn prefWidth="75.0" text="Price" />
+                      <TableColumn fx:id="nameOrder" prefWidth="75.0" text="Name" />
+                      <TableColumn fx:id="brandOrder" prefWidth="75.0" text="Brand" />
+                        <TableColumn fx:id="priceOrder" prefWidth="75.0" text="Price" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -36,7 +36,7 @@
             </content></Tab>
         <Tab text="Purchase">
             <content>
-                <AnchorPane fx:id="priceCustomer" prefHeight="200.0" prefWidth="200.0">
+                <AnchorPane fx:id="Back" onDragDetected="#LogOut" prefHeight="200.0" prefWidth="200.0">
                     <children>
                         <Button fx:id="requestButton" alignment="CENTER" layoutX="603.0" layoutY="489.0" mnemonicParsing="false" onAction="#sendOrder" style="-fx-background-color: blue;" text="Place order" textFill="WHITE">
                             <font>
@@ -55,9 +55,9 @@
                   </Label>
                   <TableView fx:id="tableOfOrders" layoutX="73.0" layoutY="162.0" prefHeight="383.0" prefWidth="420.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="Name" />
-                      <TableColumn prefWidth="75.0" text="Brand" />
-                        <TableColumn prefWidth="75.0" text="Price" />
+                      <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                      <TableColumn fx:id="brandColumn" prefWidth="75.0" text="Brand" />
+                        <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Price" />
                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -65,7 +65,12 @@
                   </TableView>
                   <TextField fx:id="nameCustomer" layoutX="600.0" layoutY="230.0" prefHeight="31.0" prefWidth="160.0" promptText="Name" />
                   <TextField fx:id="brandCustomer" layoutX="600.0" layoutY="323.0" prefHeight="31.0" prefWidth="160.0" promptText="Brand" />
-                  <TextField fx:id="nameCustomer" layoutX="600.0" layoutY="411.0" prefHeight="31.0" prefWidth="160.0" promptText="Price" />
+                  <TextField fx:id="priceCustomer" layoutX="600.0" layoutY="411.0" prefHeight="31.0" prefWidth="160.0" promptText="Price" />
+                  <Button layoutX="791.0" layoutY="32.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: blue;" text="Button" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
                     </children>
                 </AnchorPane>
             </content></Tab>

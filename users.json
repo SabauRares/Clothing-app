@@ -6,4 +6,12 @@
   "username" : "Rares2",
   "password" : "Rares2",
   "role" : "Producer"
+}, {
+  "username" : "asd",
+  "password" : "asd",
+  "role" : "Producer"
+}, {
+  "username" : "Rafael",
+  "password" : "Rarael",
+  "role" : "Customer"
 } ]
