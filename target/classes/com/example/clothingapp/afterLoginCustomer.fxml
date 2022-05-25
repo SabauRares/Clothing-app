@@ -17,7 +17,7 @@
                                 <Font name="Arial" size="48.0" />
                             </font>
                         </Label>
-                  <ImageView fitHeight="174.0" fitWidth="224.0" layoutX="81.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="174.0" fitWidth="224.0" layoutX="79.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@Img/Kart.png" />
                      </image>
